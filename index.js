@@ -287,11 +287,12 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 // 					console.log(keyName);
 // 					break;
 // 			}
+
 //NOPE.. trying to put inside the event listener
 
 document.addEventListener("keydown", function (whichKey) {
 	var keyName = whichKey.key;
-    
+
 	switch (keyName) {
 		case "w":
 			var tom1 = new Audio("./sounds/tom-1.mp3");
@@ -323,7 +324,9 @@ document.addEventListener("keydown", function (whichKey) {
 			break;
 
 		default:
-			console.log(keyName);
+			console.log("Don't break that keyboard! :)");
 			break;
 	}
 });
+
+//YEP that works!
